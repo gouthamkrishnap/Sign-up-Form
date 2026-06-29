@@ -115,7 +115,7 @@ input:focus {
 }
 
 input::placeholder {
-    color: #4A3522;
+    color: #7C5A3A;
 }
 
 input:user-invalid {
@@ -138,9 +138,19 @@ input:user-invalid {
     background-color: #A46A2A;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #D6B78A
+}
+
 button:active {
     background-color: #0D0D0D;
     color: #A46A2A;
+}
+
+button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(214,183,138,.35);
 }
 
 .form-login {
