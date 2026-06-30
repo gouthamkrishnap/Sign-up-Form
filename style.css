@@ -25,6 +25,45 @@ body {
 .background-img {
     flex: 1;
     padding: 32px;
+    display: flex;
+}
+
+.image-wrapper{
+    position: relative;
+    flex: 1;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    font-family: "Norsebold", serif;
+    font-size: clamp(2rem, 4vw, 4rem);
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 16px 16px 0 0;
+    padding: 1rem 0;
+}
+
+.logo > img {
+    display: block;
+    width: clamp(60px, 8vw, 110px);
+    height: auto;
+}
+
+.photo-credit {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem 0;
 }
 
 .main-container {
@@ -161,7 +200,7 @@ button:focus-visible {
     color: #A46A2A;
 }
 
-.background-img > img {
+.image-wrapper > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
